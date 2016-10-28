@@ -1,0 +1,7 @@
+div , h1, .center {text-align:center;}
+h2 {color:blue;}
+.und {text-decoration: underline;}
+.bold-und{text-decoration: underline; font-weight:bold;}
+.color {text-align:center; background-color:orange; color:blue;}
+body {font-family: Tahoma;}
+table , th ,td {border: 1px solid black;}
