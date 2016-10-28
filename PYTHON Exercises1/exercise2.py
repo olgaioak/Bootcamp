@@ -1,8 +1,0 @@
-number1 = input ('Enter number of 50 euro banknotes: ')
-number2 = input ('Enter number of 20 euro banknotes: ')
-number3 = input ('Enter number of 10 euro banknotes: ')
-number4 = input ('Enter number of 5 euro banknotes: ')
-number5 = input ('Enter number of 2 euro coins: ')
-number6 = input ('Enter number of 1 euro coins: ')
-sum = 50* int (number1) + 20* int(number2) + 10* int(number3) + 5* int(number4) + 2* int(number5) + int(number6)
-print ('You have', sum , 'euros')
