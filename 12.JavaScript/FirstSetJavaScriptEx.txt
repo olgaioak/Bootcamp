@@ -1,0 +1,37 @@
+Javascript 
+
+Ex2 
+
+n=5;
+if (n===0){
+  isZero = true;
+}else{
+  isZero = false;
+}
+
+
+Ex3 
+
+counter =0;
+for (counter; counter<5; counter++){
+}
+console.log(counter);
+
+Ex4 
+
+function cube(n){
+  return n*n*n;
+}
+console.log(cube(5));
+
+
+Ex5
+
+var image = document.createElement('img');
+var htmlelement = document.getElementById('parent');
+htmlelement.appendChild(image);
+
+Ex6
+
+var htmlelement = document.getElementById('avatar');
+avatar.src = 'https://github.com/parisk.png';
