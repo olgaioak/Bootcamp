@@ -12,19 +12,20 @@ public class ThreadEx5 {
 		try{
 			SumThreads[] thr = new SumThreads[10];
 			for (i=0; i<10; i++){
-				//thr[i] = new SumThreads(i*100 , (i+1)*100);
+				
 				thr[i] = new SumThreads(array[i*100], array[((1+i)*100)-1]);
-				System.out.println(array[i*100] + " " + array[((1+i)*100)-1]);
-				thr[i].start();
+				//System.out.println(array[i*100] + " " + array[((1+i)*100)-1]);
+			thr[i].start();
 			}
+			Thread.sleep(100);
 			int sum= 0;
 			for (int j=0; j<10; j++){
-				thr[j].join();
-				sum = sum +thr[j].sum();
+			thr[j].join();
+				sum = sum + thr[j].getSum();
 			}
 			System.out.println("Sum is: " + sum);
 			
-		} catch (InterruptedException e){
+		} catch (Exception e){
 			System.out.println("Interrupted Exception");
 			
 		}
